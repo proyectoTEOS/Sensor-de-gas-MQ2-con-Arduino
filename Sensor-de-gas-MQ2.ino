@@ -1,6 +1,16 @@
+/*
+Creado por  proyectoTEOS
+YouTube https://goo.gl/k7TUSZ
+Instagram https://goo.gl/zEIjia
+Facebook https://goo.gl/eivraR
+Twitter https://goo.gl/du5Wgn
+Github https://goo.gl/Xl5IiS
+Google Plus https://goo.gl/gBnUdh
+WEB http://bit.ly/1UvumG9
+*/
 const int sensorPinT = A0;
 float roT = 10;
-float gasT, v1T = 0;
+float gasT, vT = 0;
 
 void setup(){
   Serial.begin(9600);
@@ -10,13 +20,13 @@ void setup(){
     float resistanceT = (((float)5*(1023-gasT)/gasT));
     int i=1;
     for(i=1; i<51; i++){
-      v1T = resistanceT * i;
-      Serial.println(v1T);
+      vT = resistanceT * i;
+      Serial.println(vT);
       delay(50);
     }
-  }while(v1T < 12500);
-  v1T =((v1T/50)/9.83);
-  roT = v1T;                        
+  }while(vT < 12500);
+  vT =((vT/50)/9.83);
+  roT = vT;                        
   Serial.println("Calibracion finalizada");
 }
 
