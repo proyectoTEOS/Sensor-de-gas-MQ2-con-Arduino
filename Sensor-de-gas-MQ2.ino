@@ -7,7 +7,7 @@
   Twitter https://goo.gl/du5Wgn
   Github https://goo.gl/Xl5IiS
   Google Plus https://goo.gl/gBnUdh
-  WEB http://bit.ly/1UvumG9
+  WEB https://goo.gl/jtiYJy
 */
 
 const int sensorPinT = A0;
